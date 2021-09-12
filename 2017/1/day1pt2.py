@@ -10,7 +10,7 @@ def part1(originalInput):
   sum = 0
   length = len(originalInput)
   for index in range(0,length):
-    if (originalInput[index] == originalInput[(index+1)%length]):
+    if (originalInput[index] == originalInput[(index+length/2)%length]):
       sum += int(originalInput[index])
   return sum
 
